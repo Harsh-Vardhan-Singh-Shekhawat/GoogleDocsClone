@@ -3,7 +3,7 @@ import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import { Editor } from "react-draft-wysiwyg";
 import { convertFromRaw, convertToRaw, EditorState } from "draft-js";
 import { doc, setDoc, getDoc } from "@firebase/firestore";
-import { firestore } from "../../fireabase/config";
+import { firestore } from "../../firebase/config";
 
 const TextEditor = ({ uid, id }) => {
   const [editorState, setEditorState] = useState(EditorState.createEmpty());

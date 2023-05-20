@@ -2,7 +2,6 @@
 import Header from "../../components/Header";
 import DocRow from "../../components/DocRow/";
 
-// importing material ui
 import Button from "@material-tailwind/react/Button";
 import Icon from "@material-tailwind/react/Icon";
 import Modal from "@material-tailwind/react/Modal";
@@ -10,15 +9,11 @@ import ModalFooter from "@material-tailwind/react/ModalFooter";
 import ModalBody from "@material-tailwind/react/ModalBody";
 import { useContext, useEffect, useState } from "react";
 
-// Firestore
-import { firestore } from "../../fireabase/config";
+import { firestore } from "../../firebase/config";
 import {
   addDoc,
-//   getDocs,
   collection,
   serverTimestamp,
-//   query,
-//   orderBy,
   onSnapshot,
 } from "firebase/firestore";
 import { useHistory } from "react-router";

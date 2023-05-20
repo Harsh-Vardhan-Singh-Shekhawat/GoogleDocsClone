@@ -4,7 +4,7 @@ import Icon from "@material-tailwind/react/Icon";
 import { Link } from "react-router-dom";
 import { useState, useContext } from "react";
 import { doc, deleteDoc } from "firebase/firestore";
-import { firestore } from "../../fireabase/config";
+import { firestore } from "../../firebase/config";
 import { AuthContext } from "../../context/firebase";
 
 const DowRow = ({ id, fileName, date }) => {

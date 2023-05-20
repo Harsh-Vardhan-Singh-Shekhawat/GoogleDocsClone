@@ -1,5 +1,4 @@
 import Icon from "@material-tailwind/react/Icon";
-import Button from "@material-tailwind/react/Button";
 import pdfMake from "pdfmake/build/pdfmake";
 import pdfFonts from "pdfmake/build/vfs_fonts";
 import {
@@ -16,7 +15,7 @@ import { AuthContext } from "../../context/firebase";
 import { useContext, useEffect } from "react";
 import { Link, useParams, useHistory } from "react-router-dom";
 import { signOut } from "@firebase/auth";
-import { auth, firestore } from "../../fireabase/config";
+import { auth, firestore } from "../../firebase/config";
 import { doc, getDoc } from "@firebase/firestore";
 import { useState } from "react";
 

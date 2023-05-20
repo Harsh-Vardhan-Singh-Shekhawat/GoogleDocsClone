@@ -3,7 +3,7 @@ import Button from "@material-tailwind/react/Button";
 import Icon from "@material-tailwind/react/Icon";
 import { useContext } from "react";
 import { AuthContext } from "../../context/firebase";
-import { auth } from "../../fireabase/config";
+import { auth } from "../../firebase/config";
 
 const Header = () => {
   const { user, setUser } = useContext(AuthContext);

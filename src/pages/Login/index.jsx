@@ -9,14 +9,14 @@ import {
   onAuthStateChanged,
   signInWithPopup,
 } from "firebase/auth";
-import { auth, firestore } from "../../fireabase/config";
+import { auth, firestore } from "../../firebase/config";
 import { setDoc, serverTimestamp, doc } from "firebase/firestore";
 
-// importing firebase context
+
 import { AuthContext } from "../../context/firebase";
 
 const Login = () => {
-  //get the user state from the context
+  
   const { setUser } = useContext(AuthContext);
   const history = useHistory();
   onAuthStateChanged(auth, (user) => {
